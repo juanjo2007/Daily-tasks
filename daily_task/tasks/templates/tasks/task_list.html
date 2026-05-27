@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tasks</title>
+</head>
+<body>
+
+    <h1>Daily Tasks</h1>
+
+    {% for task in tasks %}
+
+        <div style="border:1px solid gray; padding:10px; margin:10px;">
+            <h3>{{ task.title }}</h3>
+
+            <p>{{ task.description }}</p>
+
+            {% if task.completed %}
+                <p>✅ Completed</p>
+            {% else %}
+                <p>⌛ Pending</p>
+            {% endif %}
+        </div>
+
+    {% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tasks</title>
+</head>
+<body>
+
+    <h1>Daily Tasks</h1>
+
+    {% for task in tasks %}
+
+        <div style="border:1px solid gray; padding:10px; margin:10px;">
+            <h3>{{ task.title }}</h3>
+
+            <p>{{ task.description }}</p>
+
+            {% if task.completed %}
+                <p>✅ Completed</p>
+            {% else %}
+                <p>⌛ Pending</p>
+            {% endif %}
+        </div>
+
+    {% endfor %}
+
+</body>
+</html>
+</body>
+</html>
